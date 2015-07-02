@@ -1,18 +1,28 @@
-George Cambridge,William Windsor,Catherine Middleton
-Charlotte Windsor,William Windsor,Catherine Middleton
-William Windsor,Charles Windsor,Diana Spencer
-Charles Windsor,Philip Edinburgh,Elizabeth Windsor
-Anne Windsor,Philip Edinburgh,Elizabeth Windsor
-Peter Phillips,Mark Phillips,Anne Windsor
-Savannah Phillips,Peter Phillips,Autumn Kelly
-Isla Phillips,Peter Phillips,Autumn Kelly
-Zara Phillips,Mark Phillips,Anne Windsor
-Mia Tindall,Michael Tindall,Zara Phillips
-Andrew Windsor,Philip Edinburgh,Elizabeth Windsor
-Beatrice York,Andrew Windsor,Sarah Ferguson
-Eugenie York,Andrew Windsor,Sarah Ferguson
-Edward Windsor,Philip Edinburgh,Elizabeth Windsor
-Louise Windsor,Edward Windsor,Sophie Rhys-Jones
-James Severn,Edward Windsor,Sophie Rhys-Jones
-Elizabeth Windsor,George Windsor,Elizabeth Bowes-Lyon
-Margaret Windsor,George Windsor,Elizabeth Bowes-Lyon
+George Cambridge,William Windsor,Catherine Middleton,Male
+Charlotte Windsor,William Windsor,Catherine Middleton,Female
+William Windsor,Charles Windsor,Diana Spencer,Male
+Charles Windsor,Philip Edinburgh,Elizabeth Windsor,Male
+Anne Windsor,Philip Edinburgh,Elizabeth Windsor,Female
+Peter Phillips,Mark Phillips,Anne Windsor,Male
+Savannah Phillips,Peter Phillips,Autumn Kelly,Female
+Isla Phillips,Peter Phillips,Autumn Kelly,Female
+Zara Phillips,Mark Phillips,Anne Windsor,Female
+Mia Tindall,Michael Tindall,Zara Phillips,Female
+Andrew Windsor,Philip Edinburgh,Elizabeth Windsor,Male
+Beatrice York,Andrew Windsor,Sarah Ferguson,Female
+Eugenie York,Andrew Windsor,Sarah Ferguson,Female
+Edward Windsor,Philip Edinburgh,Elizabeth Windsor,Male
+Louise Windsor,Edward Windsor,Sophie Rhys-Jones,Female
+James Severn,Edward Windsor,Sophie Rhys-Jones,Male
+Elizabeth Windsor,George Windsor,Elizabeth Bowes-Lyon,Female
+Margaret Windsor,George Windsor,Elizabeth Bowes-Lyon,Female
+Diana Spencer,,,Female
+Autumn Kelly,,,Female
+Catherine Middleton,,,Female
+Philip Edinburgh,,,Male
+Elizabeth Bowes-Lyon,,,Female
+George Windsor,,,Male
+Sarah Ferguson,,,Female
+Sophie Rhys-Jones,,,Female
+Mark Phillips,,,Male
+Michael Tindall,,,Male
