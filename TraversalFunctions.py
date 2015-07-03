@@ -6,33 +6,47 @@
 # Generations remains 0 if function returns false
 def traverse_down_tree(person, target, generations):
     if person.name == target.name:
-        return true
-    currentGeneration = generations
+        return True
+    currentGenerations = generations[0]
     for child in person.children:
-        if not traverseDownTree(child, target, generations + 1):
-            generations = currentGenerations
+        generations[0] += 1
+        if not traverse_down_tree(child, target, generations):
+            generations[0] = currentGenerations
+        else:
+            return True
     return False
 
 #Work in progress!
-def traverse_up_tree(person, target, generationsUp, generationsDown):
-    currentGeneration = generationsDown
-    if traverseDownTree(person.father, target, generationsDown):
+#Generations should be a list with two entries both 0
+#First generation entry will contain generations down the tree from common ancestor
+#Second Generations entry will contain generations up the tree
+#Direct Descendent relationship should be ruled out first by just use of
+#traversal down tree function first
+def traverse_up_tree(person, target, generations):
+    currentGenerationDown = generations[0]
+    generations[1] +=1
+
+    if person.father and traverse_down_tree(person.father, target, generations):
         return True
     else:
-        generationsDown = currentGeneration
-    # Here I might need to account for half siblings with an elif
+        generations[0] = currentGenerationDown
+    #This is to account for half siblings
+    if person.mother and traverse_down_tree(person.mother, target, generations):
+        return True
+    else:
+        generations[0] = currentGenerationDown
         
-    currentGeneration = generationsUp
+    currentGenerationUp = generations[1]
     
-    if traverseUpTree(person.father, target, generationsUp + 1, generationsDown):
+    if person.father and traverse_up_tree(person.father, target,generations):
         return True
     else:
-        generationsUp = currentGeneration
+        generations[1] = currentGenerationUp
         
-    if traverseUpTree(person.mother, target, generationsUp + 1, generationsDown):
+    if person.mother and traverse_up_tree(person.mother, target, generations):
         return True
     else:
-        generationsUp = currentGeneration
+        generations[1] = currentGenerationUp
                       
     return False
     
