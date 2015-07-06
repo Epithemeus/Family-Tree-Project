@@ -2,9 +2,6 @@ import csv
 from Person import *
 
 class TreeReader(object):
-    def __init__(self, familyTreeFileName):
-        familyTreeFile = open(familyTreeFileName, 'r')
-        self.csvReader = csv.reader(familyTreeFile, delimiter=',', quotechar='|')
 
     def link_parents(self, familyTree):
         for individual in familyTree:
@@ -31,3 +28,8 @@ class TreeReader(object):
         self.link_parents(familyTree)
         self.link_children(familyTree)
         return familyTree
+
+    def __init__(self, familyTreeFileName):
+        familyTreeFile = open(familyTreeFileName, 'r')
+        self.csvReader = csv.reader(familyTreeFile, delimiter=',', quotechar='|')
+
